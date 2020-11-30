@@ -1,0 +1,826 @@
+@import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab&display=swap");
+* {
+  box-sizing: border-box;
+
+}
+body {
+  font-family: "Chivo", sans-serif;
+  background-color: #181818;
+  margin: 0px;
+  padding: 0px;
+ 
+}
+
+li {
+  list-style: none;
+}
+
+h2 {
+  font-size: cal(2vw + 1rem);
+}
+
+/* BURGER MENU */
+
+.menu-btn {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+  position: fixed;
+  top: 0;
+  left: 50;
+  z-index: 2;
+}
+
+.menu-btn-burger {
+  width: 50px;
+  height: 6px;
+  background: white;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+
+.menu-btn-burger::before,
+.menu-btn-burger::after {
+  content: "";
+  position: absolute;
+  width: 50px;
+  height: 6px;
+  background: #fff;
+  border-radius: 5px;
+  transition: all 0.5s ease-in-out;
+}
+
+.menu-btn-burger::before {
+  transform: translateY(-16px);
+}
+.menu-btn-burger::after {
+  transform: translateY(16px);
+}
+
+/* BURGER MENU ANIMATION */
+.menu-btn.open .menu-btn-burger {
+  transform: translateX(-50px);
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-burger::before {
+  transform: rotate(45deg) translate(35px, -35px);
+}
+
+.menu-btn.open .menu-btn-burger::after {
+  transform: rotate(-45deg) translate(35px, 35px);
+}
+
+
+
+
+
+
+
+
+/* site navigation */
+
+.site-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  background-color: rgb(170, 170, 170);
+  padding: 10px 50px 10px 50px;
+  position: fixed;
+  top: 0;
+  z-index: 1;
+}
+
+.site-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: cal(10vw + 1rem);
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-right: 20px;
+  padding-left: 50px;
+}
+
+.user-nav-open ul {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-end;  
+}
+
+.user-nav-open li {
+  color: whitesmoke;
+  font-size: 1.2222rem;
+  display: flex;
+  padding-right: 18px;
+}
+
+.user-nav-open a,
+.site-nav a {
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+ 
+.user-nav-open a:hover,
+.site-nav a:hover {
+  color:white;
+  font-weight: bold;
+  transition: color 0.4s ease;
+}
+
+
+
+
+
+
+
+
+
+/* ---------------- responsive drawings ------------------ */
+@media (min-width: 700px) {
+  .drawings img {
+    width: 10vw;
+    margin: 0;
+    padding: 0;
+    height: auto;
+  }
+
+  .photography img {
+    width: 30vw;
+    height: auto;
+  }
+}
+
+/*  min-width: 1200px - responsive drawings */
+
+
+/* site header and nav */
+
+@media (min-width: 800px) {
+  .site-header a {
+    display: block;
+  }
+  .site-nav-icon {
+    display: none;
+  }
+}
+
+@media (min-width: 800px) {
+  .site-header a {
+    display: block;
+  }
+}
+
+
+/*  -------- responsive header ---------- */
+
+
+.header > .header-img {
+  position: absolute;
+  object-fit: cover;
+  font-family: "object-fit: cover;";
+   /* support for plugin https://github.com/bfred-it/object-fit-images */
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: -1000;
+}
+
+.header div {
+  height: 700px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header h1 {
+  font-size: 4rem;
+  color: white;
+  margin-bottom: 1rem !important;
+  background-color: #181818;
+  padding: 0px 10px;
+}
+
+.header p {
+  color: white;
+  margin-top: 4px;
+  font-size: 1.0625rem;
+  line-height: 1.4em;
+  background-color: #181818;
+}
+.image h1 {
+  height: 800px;
+}
+
+
+
+/* ------------------ introduction homepage ------------- */
+
+.intro-text {
+  position: relative;
+  text-align: center;
+  padding: 10px 20px 40px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.intro-text p {
+  margin: 0px 80px 0px 80px;
+}
+
+/* ------------------ introduction contat us page ------------- */
+
+.contact-text {
+  position: relative;
+  text-align: center;
+  padding: 10vh 20px 40px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.contact-text p {
+  margin: 0px 80px 0px 80px;
+}
+
+
+
+
+
+
+/* --------------- drawing showcase ------------------ */
+
+.drawing-border {
+  border: solid transparent 1px;
+  padding:30px;
+  margin: 20px;
+}
+
+.drawing-showcase {
+  text-align: center;
+  padding: 80px 0px 80px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+
+
+.drawing-showcase2 {
+  text-align: center;
+  padding: 80px 0px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+.end-text p {
+  margin: 0px 80px 0px 80px;
+}
+.drawing-showcase ul,
+.drawing-showcase2 ul
+ {
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 100px;
+}
+.drawing-showcase img,
+.drawing-showcase2 img  {
+  max-height: 12em;
+  width: auto !important;
+  box-shadow: 0 0 30px #333;
+}
+
+.shop-now {
+  border: #ffffff solid 1px;
+  padding: 16px 16px 16px;
+  cursor: pointer;
+  font-size: 0.9375;
+  font-weight: 500;
+  border-radius: 4px;
+  color: whitesmoke;
+  padding: 0.3rem 0.6rem 0.3rem 0.6rem;
+  text-decoration: none;
+}
+
+.shop-now:hover {
+  cursor: pointer;
+color: #181818;
+background-color: pink;
+}
+
+
+
+
+/* --------------- drawing showcase ------------------ */
+@media (min-height: 700px) {
+.drawing-border {
+  border: solid transparent 1px;
+  padding: 80px;
+  margin: 20px;
+}
+
+.drawing-showcase {
+  text-align: center;
+  padding: 80px 0px 80px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+
+
+.drawing-showcase2 {
+  text-align: center;
+  padding: 80px 0px;
+  margin: 0px;
+  font-size: 1.0625rem;
+  color: white;
+  background-color: #181818;
+}
+
+.drawing-showcase img,
+.drawing-showcase2 img  {
+  height: 1000px;
+  width: 1000px;
+  box-shadow: 0 0 10px #333;
+}
+}
+
+
+/* --------------- drawing showcase ------------------ */
+@media (min-height: 1200px) {
+  .drawing-border {
+    border: solid transparent 1px;
+    padding: 0px;
+    margin: 0px;
+  }
+  
+  .drawing-showcase {
+    text-align: center;
+    padding: 80px 0px 80px;
+    margin: 0px;
+    font-size: 1.0625rem;
+    color: white;
+    background-color: #181818;
+  }
+    
+  .drawing-showcase2 {
+    text-align: center;
+    padding: 80px 0px;
+    margin: 0px;
+    font-size: 1.0625rem;
+    color: white;
+    background-color: #181818;
+  }
+
+  .drawing-showcase img, 
+  .drawing-showcase2 img {
+   height: 100%;
+    width: auto !important;
+    box-shadow: 0 0 30px #333;
+  }
+  }
+  
+
+/* ---------------- parallax ------------------------------- */
+
+.parallax {
+  position: relative;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/photography/daisy2.jpg);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.frontpage_text {
+  padding-top: 250px;
+  top: 50%;
+}
+
+
+.text {
+  color: #ffffff;
+  width: 500px;
+  line-height: 30px;
+  text-align: center;
+}
+
+#content {
+  background-color: #181818;
+  box-sizing: border-box;
+  height: 100vh;
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 10px 20px 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.parallax-2 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/drawings/drawing10.JPG);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.parallax-3 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/drawings/drawing11.JPG);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.parallax-4 {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0) 0%,
+      rgba(0, 0, 0, 0.2),
+      rgba(0, 0, 0, 0.2)
+    ),
+    url(images/drawings/drawing12.JPG);
+  min-height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  letter-spacing: 0.3em;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.text-2 {
+  color: #ffffff;
+  width: 800px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.text a,
+.text-2 a {
+  border: #ffffff solid 2px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 0.9375;
+  border-radius: 4px;
+  color: whitesmoke;
+  padding: 0.5rem 1.5rem 0.5rem 1.5rem;
+  text-decoration: none;
+}
+
+#content-2 {
+  background-color: #181818;
+  box-sizing: border-box;
+  height: 60vh;
+  background-attachment: scroll;
+  background-size: cover;
+  padding: 10px 20px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+::selection {
+  background: #ffffff;
+}
+
+
+
+@media (max-width: 500px){
+  .text-2 p {
+    padding-right: 5px;
+    padding-left: 5px;
+  }
+    .intro-text p {
+      padding-left: 5px;
+      padding-right: 5px;
+      margin: 0px;
+      line-height: 1.4em;
+     }
+}
+
+@media (min-width: 1000px){
+  .intro-text h3 {
+   font-size: 2rem;
+   padding-top: 10vh;
+  }
+    .intro-text p {
+      padding-left: 100px;
+      padding-right: 5px;
+      margin: 0px;
+      line-height: 2em;
+     }
+
+     .drawing-showcase h2 {
+       font-size: 2rem;
+     }
+}
+
+
+
+
+
+
+ /* ----------------- bottom section -------------------- */
+ .end-text {
+  background-color: #181818;
+}
+.end-text ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: wrap;
+  text-align: center;
+  margin-bottom: 70px;
+ font-size: 1.0625rem;
+  color: white;
+}  
+  .end-image {
+  height: 300px;
+  width: 300px;
+  background-image: url(images/drawings/drawing12.JPG);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 30px 40px 30px 0px;
+  }
+ 
+  .end-text h3 {
+    font-size: 3rem;
+    margin: 10px 30px 30px 0px;
+  }
+  .end-text p {
+     margin: 30px 30px 30px 0px;
+  }
+
+
+    /* ---------------- bottom section 700px ---------------------- */
+
+  @media (min-width: 700px) {
+
+   .end-text {
+      margin-left: 20px;
+      margin-right: 20px;
+      background-color: #181818;
+      }
+      .end-text ul {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        flex: wrap;
+        text-align: center;
+        margin-bottom: 70px;
+        font-size: 1.0625rem;
+        color: white;
+    
+      }
+       .end-image {
+        height: 400px;
+        width: 550px;
+        background-image: url(images/drawings/drawing12.JPG) no-repeat;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        margin: 30px 40px 30px 0px;
+        }
+
+        .end-image:hover {
+          background-image: url(images/drawings/drawing11.JPG) no-repeat;
+          transition: all 1s ease-in-out;
+          }
+                  
+        .end-text h3 {
+          font-size: 3rem;
+          margin: 60px 30px 60px 0px;
+        }
+        .end-text p {
+           margin: 30px 80px 30px 45px;
+        }
+    
+      }
+    
+
+/* ---------------- bottom section 1200px---------------------- */
+
+@media (min-width: 1200px) {
+
+  .end-text {
+  margin: 0;
+  width: 100%;
+  background-color: #181818;
+  }
+  .end-text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+    text-align: left;
+    margin-bottom: 120px;
+    font-size: 1.0625rem;
+    color: #181818;
+    background-color: white;
+  }
+
+    .end-image {
+    height: 500px;
+    width: 500px;
+    background-image: url(images/drawings/drawing12.JPG) no-repeat;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 30px 100px 30px 100px;
+    }
+    
+    .end-image:hover {
+      height: 500px;
+      width: 500px;
+                 margin: 30px 100px 30px 100px;
+  
+      }
+   
+  .end-text h3 {
+      font-size: 3rem;
+      margin: 30px 30px 60px 0px;
+    }
+    .end-text p {
+      margin: 30px 80px 30px 0px;
+    }
+  
+  }
+  
+  
+  
+
+  
+/* ---------------- bottom section 1600px---------------------- */
+
+@media (min-width: 1600px) {
+
+  .end-text {
+  margin: 0;
+  width: 100%;
+  background-color: #181818;
+  }
+  .end-text ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    flex: wrap;
+    text-align: left;
+    margin-bottom: 120px;
+    font-size: 1.0625rem;
+    color: #181818;
+    background-color: white;
+  }
+  
+    .end-image {
+    height: 500px;
+    width: 600px;
+    background-image: url(images/drawings/drawing12.JPG);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 60px 100px 60px 250px;
+    }
+   
+    .end-text h3 {
+      font-size: 3rem;
+      margin: 30px 50px 60px 0px;
+    }
+    .end-text p {
+      margin: 60px 250px 60px 0px;
+    font-size: 1rem;
+    line-height: 1.4rem;
+    }
+  
+  }
+  
+  
+
+/*  --------------- FOOTER ------------------------ */
+
+.site-footer {
+  height: 220px;
+  background-color: rgba(134, 144, 152, 0.7);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.site-footer li {
+  font-size: 1.6666rem;
+  padding-left: 20px;
+}
+
+.site-footer h2 {
+  padding-top: 50px;
+  padding-left: 50px;
+  margin: 0px;
+  color: #181818;
+  font-weight: bold;
+  font-size: 1.2222rem;
+}
+
+.site-footer p {
+  padding-top: 30px;
+  padding-left: 50px;
+  margin: 0px;
+  color: #181818;
+  font-weight: bold;
+  font-size: 1.2222rem;
+}
+
+
+
+/* hide menu wrap responsive - max-width 700px */
+
+@media (max-width: 700px) {
+
+  .user-nav-open ul {
+    background-color: orange;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+  /* visibility: hidden; */
+    overflow: hidden;
+  display: flex;
+  display: none;
+  flex-direction: column;
+ 
+  align-items: center;
+  justify-content: center;
+  }
+
+
+.user-nav-open ul li {
+  margin: 1rem;
+  font-size: 1.5rem;
+}
+.user-nav-open ul li a:hover {
+  color: white;
+  transition: color 0.29s ease;
+}
+
+}
+
+
