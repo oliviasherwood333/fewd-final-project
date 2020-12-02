@@ -9,8 +9,56 @@
     <link rel='stylesheet' type='text/css' media='screen' href='main.css' href="nav.css">
     <script src="https://kit.fontawesome.com/ef77240778.js" crossorigin="anonymous"></script>
 
+    <!-- Favicons -->
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/android-chrome-192x192.png">
+
+    <link rel="manifest" href="/icons/android-chrome-512x512.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+    <link rel="shortcut icon" href="/icons/favicon.ico">
+
+
+    <!-- Formbutton -->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
+    <script>
+        /* paste this in verbatim */
+        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments); };
+
+        /* customize formbutton here*/
+        formbutton("create", {
+            action: "https://formspree.io/f/mgepllab",
+            title: "How can we help?",
+            fields: [
+                {
+                    type: "email",
+                    label: "Email:",
+                    name: "email",
+                    required: true,
+                    placeholder: "your@email.com"
+                },
+                {
+                    type: "textarea",
+                    label: "Message:",
+                    name: "message",
+                    placeholder: "What's on your mind?",
+                },
+                { type: "submit" }
+            ],
+            styles: {
+                fontFamily: "Montserrat",
+                title: {
+                    background: "gray",
+                },
+                button: {
+                    background: "gray",
+                }
+            },
+            initiallyVisible: false
+        });
+    </script>
 
 
 </head>
@@ -26,41 +74,35 @@
         <nav class="user-nav-open">
             <ul>
                 <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
+                <li><a href="#">SHOP</a></li>
+                <li><a href="#">DELIVERY</a></li>
                 <li><a href="contact.html">CONTACT</a></li>
             </ul>
-            <nav class="user-nav-close"></nav>
         </nav>
     </header>
 
     <!-- Burger menu -->
 
-    <div class="menu-btn .js-nav-icon">
+    <div class="menu-btn js-nav-icon">
         <div class="menu-btn-burger">
         </div>
     </div>
 
-
-
+    
     <!-- Header -->
     <div class="header">
         <img class="header-img" src="images/drawings/drawing10.JPG" alt="">
         <div>
-            <h1>Welcome.</h1>
-            <p>Lorem ipsum dolor sit amet.</p>
+            <h1>Artwork</h1>
+            <p>Illustrations, prints and cards.</p>
         </div>
     </div>
 
 
     <!-- introduction text -->
     <div class="intro-text">
-        <h3>Hello there</h3>
-        <p>Aenean congue urna magna, ut auctor libero eleifend eu. Phasellus consequat tortor et augue imperdiet tempor.
-            Fusce eu elementum nibh, sed porta lorem. Donec sodales malesuada rhoncus. Aliquam non euismod nisl.
-            Phasellus pulvinar libero felis, eget elementum lectus viverra faucibus. Nam ligula lorem, malesuada ac sem
-            et, porta sodales eros. In vulputate felis ut hendrerit tincidunt. Suspendisse faucibus nec neque quis
-            pharetra. In mattis nec dolor ac mattis. Aenean ut fringilla purus. Aliquam et leo id turpis tempor
-            volutpat.</p>
+       <h3>Hello and welcome!</h3>
+        <p>We make and design handmade and hand-drawn illustration, prints and cards. Thank you for taking the time to have a look at our work. If you see something but would like it in a different colour, please get in touch.</p>
     </div>
 
 
@@ -68,27 +110,31 @@
 
     <!-- Drawing showcase -->
     <div class="drawing-showcase">
-        <h2>Prints and posters</h2>
+        <h2>Hand-drawn prints</h2>
         <ul>
             <li class="drawing-border">
                 <a href="#"><img src="images/drawings/drawing1.PNG" alt="drawing1" /></a>
                 <p>Azte Pattern</p>
+                <p>Available in: A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
             <li class="drawing-border">
                 <a href="#"><img src="images/drawings/drawing7.PNG" alt="drawing2" /></a>
                 <p>Mixed Media</p>
+                <p>Available in: A5, A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
 
             <li class="drawing-border">
                 <a href="#"><img src="images/drawings/drawing6.PNG" alt="drawing3" /></a>
                 <p>Triangular</p>
+                <p>Available in: A2, A3</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
             <li class="drawing-border">
                 <a href="#"><img src="images/drawings/drawing8.PNG" alt="drawing4" /></a>
                 <p>Floral</p>
+                <p>Available in: A5, A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
         </ul>
@@ -98,53 +144,37 @@
     <!-- Start of parallax effect 2 -->
 
     <section class="parallax-3">
-
+    
         <div class="frontpage_text">
-            <h1>Portfolio</h1>
-            <p>Lorum ipsum text here.</p>
-        </div>
+                            </div>
 
     </section>
-    <section id="content-2">
-        <div class="text-2">
-            <h2>Gallery</h2>
-            <p>Lorem ipsum dolor sit amet, sed cras quis, felis nulla proin quisque asperiores officia, ipsum libero
-                praesent aliquet, quis congue eget sem varius. Nibh semper metus pellentesque interdum amet, vel
-                nulla nobis amet porttitor, et sit. Elementum suscipit pellentesque a, odio habitant elit nulla at
-                diam. Ut justo quisque, wisi praesent aliquam, est accumsan laborum ut est, velit tortor laoreet,
-                amet metus.</p>
-
-            <a href="#">Shop now</a>
-        </div>
-    </section>
-
-
-
-    </section>
-
-
+    
     <div class="drawing-showcase2">
-        <h2>Prints and posters</h2>
-        <ul>
+           <ul>
             <li class="drawing-border">
                 <a href="#"><img src="images/drawings/drawing2.PNG" alt="drawing5" /></a>
                 <p>Azte Pattern</p>
+                <p>Available in: A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
             <li class="drawing-border">
                 <a href="#"><img src="images/drawings/drawing4.PNG" alt="drawing6" /></a>
                 <p>Mixed Media</p>
+                <p>Available in: A5, A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
 
             <li class="drawing-border">
                 <a href="#"><img src="images/drawings/drawing5.PNG" alt="drawing7" /></a>
                 <p>Triangular</p>
+                <p>Available in: A5, A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
             <li class="drawing-border">
                 <a href="#"><img src="images/drawings/drawing9.PNG" alt="drawing8" /></a>
                 <p>Floral</p>
+                <p>Available in: A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
         </ul>
@@ -152,34 +182,66 @@
     </div>
 
 
-
-    <!-- Bottom closing text -->
-    <div class="end-text">
+    <div class="drawing-showcase3">
         <ul>
+         <li class="drawing-border">
+             <a href="#"><img src="images/drawings/drawing2.PNG" alt="drawing5" /></a>
+             <p>Azte Pattern</p>
+             <p>Available in: A6</p>
+             <a class="shop-now" href="#">Shop now</a>
+         </li>
+         <li class="drawing-border">
+             <a href="#"><img src="images/drawings/drawing4.PNG" alt="drawing6" /></a>
+             <p>Mixed Media</p>
+             <p>Available in: A5, A6</p>
+             <a class="shop-now" href="#">Shop now</a>
+         </li>
 
-            <li>
-                <div class="end-image"></div>
-            </li>
-            <li>
+         <li class="drawing-border">
+             <a href="#"><img src="images/drawings/drawing5.PNG" alt="drawing7" /></a>
+             <p>Triangular</p>
+             <p>Available in: A5, A6</p>
+             <a class="shop-now" href="#">Shop now</a>
+         </li>
+         <li class="drawing-border">
+             <a href="#"><img src="images/drawings/drawing9.PNG" alt="drawing8" /></a>
+             <p>Floral</p>
+             <p>Available in: A6</p>
+             <a class="shop-now" href="#">Shop now</a>
+         </li>
+     </ul>
 
-                <h3>"Quote goes here..."</h3>
-                <p>Aenean congue urna magna, ut auctor libero eleifend eu. Phasellus consequat tortor et augue
-                    imperdiet
-                    tempor.</p>
-            </li>
-
-        </ul>
-
-    </div>
+ </div>
 
 
+    </section>
 
+
+   <section id="content-2">
+        <div class="text-2">
+            <h2>Customise your order</h2>
+            <ul class="customize">
+                <li class="customize-icons"><i class="fad fa-comment-edit"></i></i></i></i></i></li>
+    <li class="customize-icons"><i class="fad fa-arrow-right"></i></li>
+                <li class="customize-icons"><i class="fad fa-dice-d6"></i></li>
+                <li class="customize-icons"><i class="fad fa-arrow-right"></i></li>
+                <li class="customize-icons"><i class="fad fa-home-lg"></i></li>
+            
+                <li></li>
+            </ul>
+            <p>Get in touch to discuss bespoke illustrations, prints, cards, and more.</p>
+
+            <a href="/contact.html">Get in touch</a>
+        </div>
+    </section>
 
 
     </main>
     <!-- Start of footer with social links -->
 
     <div class="site-footer">
+        <div>
+
         <h2>OLIVIA SHERWOOD</h2>
         <p>Follow me.</p>
         <ul>
@@ -188,9 +250,12 @@
 
             <li><a href="https://www.linkedin.com/in/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
                         class="fab fa-linkedin"></i></a></li>
-        </ul>
 
+                        <li><div class="copyright">© 2020 Olivia Sherwood</div></li>
+        </ul>
+       
     </div>
+
     <script src='script.js'></script>
 </body>
 

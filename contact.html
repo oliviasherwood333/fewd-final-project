@@ -11,9 +11,42 @@
 
 <!-- Formbutton -->
 <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+
 <script>
-  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
-  formbutton("create", {action: "https://formspree.io/f/mgepllab"})
+  /* paste this in verbatim */
+  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+
+  /* customize formbutton here*/     
+  formbutton("create", {
+    action: "https://formspree.io/f/mgepllab",
+    title: "How can we help?",
+    fields: [
+      { 
+        type: "email", 
+        label: "Email:", 
+        name: "email",
+        required: true,
+        placeholder: "your@email.com"
+      },
+      {
+        type: "textarea",
+        label: "Message:",
+        name: "message",
+        placeholder: "What's on your mind?",
+      },
+      { type: "submit" }      
+    ],
+    styles: {
+      fontFamily: "Montserrat",
+      title: {
+        background: "gray",
+      },
+      button: {
+        background: "gray",
+      }
+    },
+    initiallyVisible: true
+  });
 </script>
 
 
@@ -47,32 +80,7 @@
 
 
 
-
-    <form
-    action="https://formspree.io/f/mgepllab"
-    method="POST"
-  >
-    <label>
-      Your email:
-      <input type="text" name="_replyto">
-    </label>
-    <label>
-      Your message:
-      <textarea name="message"></textarea>
-    </label>
- 
-    <!-- your other form fields go here -->
-  
-    <button type="submit">Send</button>
-  </form>
-
-
-
-
-
-
-
-    <!-- introduction text -->
+   <!-- introduction text -->
     <div class="contact-text">
         <h3>Hello there</h3>
         <p>Aenean congue urna magna, ut auctor libero eleifend eu. Phasellus consequat tortor et augue imperdiet tempor.
