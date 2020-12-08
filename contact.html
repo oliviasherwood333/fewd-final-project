@@ -2,52 +2,22 @@
 <html>
 
 <head>
-    <meta charset='utf-8'>
-    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Olivia Sherwood Portfolio</title>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css' href="nav.css">
-    <script src="https://kit.fontawesome.com/ef77240778.js" crossorigin="anonymous"></script>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>Olivia Sherwood Portfolio</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css' href="nav.css">
+  <script src="https://kit.fontawesome.com/ef77240778.js" crossorigin="anonymous"></script>
 
-<!-- Formbutton -->
-<script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
+  <!-- Favicons -->
 
-<script>
-  /* paste this in verbatim */
-  window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments);};
+  <link rel="apple-touch-icon" sizes="180x180" href="/icons/android-chrome-192x192.png">
 
-  /* customize formbutton here*/     
-  formbutton("create", {
-    action: "https://formspree.io/f/mgepllab",
-    title: "How can we help?",
-    fields: [
-      { 
-        type: "email", 
-        label: "Email:", 
-        name: "email",
-        required: true,
-        placeholder: "your@email.com"
-      },
-      {
-        type: "textarea",
-        label: "Message:",
-        name: "message",
-        placeholder: "What's on your mind?",
-      },
-      { type: "submit" }      
-    ],
-    styles: {
-      fontFamily: "Montserrat",
-      title: {
-        background: "gray",
-      },
-      button: {
-        background: "gray",
-      }
-    },
-    initiallyVisible: true
-  });
-</script>
+  <link rel="manifest" href="/icons/android-chrome-512x512.png">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png">
+  <link rel="shortcut icon" href="/icons/favicon.ico">
 
 
 
@@ -55,94 +25,86 @@
 
 <body>
 
+  
+
     <!-- Start of header with navigation -->
     <header class="site-header">
-        <nav class="site-nav">
-            <h2><a href="index.html">OLIVIA SHERWOOD<a href="#"></a></h2>
-        </nav>
+      <nav class="site-nav">
+          <h2><a href="index.html">OLIVIA SHERWOOD<a href="#"></a></h2>
+      </nav>
 
-        <nav class="user-nav-open">
-            <ul>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
-            </ul>
-            <nav class="user-nav-close"></nav>
-        </nav>
-    </header>
+      <nav class="user-nav-open">
+          <ul>
+              <li><a href="index.html">ABOUT</a></li>
+              <li><a href="shop.html">SHOP</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
+          </ul>
+      </nav>
+  </header>
 
-    <!-- Burger menu -->
+  <!-- Burger menu -->
 
-    <div class="menu-btn .js-nav-icon">
-        <div class="menu-btn-burger">
-        </div>
-    </div>
+  <div class="menu-btn js-nav-icon">
+      <div class="menu-btn-burger">
+      </div>
+  </div>
 
-
-
-   <!-- introduction text -->
-    <div class="contact-text">
-        <h3>Hello there</h3>
-        <p>Aenean congue urna magna, ut auctor libero eleifend eu. Phasellus consequat tortor et augue imperdiet tempor.
-            Fusce eu elementum nibh, sed porta lorem. Donec sodales malesuada rhoncus. Aliquam non euismod nisl.
-            Phasellus pulvinar libero felis, eget elementum lectus viverra faucibus. Nam ligula lorem, malesuada ac sem
-            et, porta sodales eros. In vulputate felis ut hendrerit tincidunt. Suspendisse faucibus nec neque quis
-            pharetra. In mattis nec dolor ac mattis. Aenean ut fringilla purus. Aliquam et leo id turpis tempor
-            volutpat.</p>
-    </div>
-
-
-
-
-    <!-- Start of parallax effect 2 -->
-
-    <section class="parallax-3">
-
-        <div class="frontpage_text">
-            <h1>Portfolio</h1>
-            <p>Lorum ipsum text here.</p>
-        </div>
-
-    </section>
-    <section id="content-2">
-        <div class="text-2">
-            <h2>Gallery</h2>
-            <p>Lorem ipsum dolor sit amet, sed cras quis, felis nulla proin quisque asperiores officia, ipsum libero
-                praesent aliquet, quis congue eget sem varius. Nibh semper metus pellentesque interdum amet, vel
-                nulla nobis amet porttitor, et sit. Elementum suscipit pellentesque a, odio habitant elit nulla at
-                diam. Ut justo quisque, wisi praesent aliquam, est accumsan laborum ut est, velit tortor laoreet,
-                amet metus.</p>
-
-            <a href="#">Shop now</a>
-        </div>
-    </section>
-
-
-    
-      </section>
-
-
-
-
+  
  
+  <!-- introduction text -->
+  <div class="contact-us-intro-text">
+    <h3>Contact us</h3>
+     <p>Have a question? Fill out the short form below and we'll be in touch.
+     </p>
+ </div>
 
 
-    </main>
-    <!-- Start of footer with social links -->
+      <ul class="form-layout">
+<li class="form-layout-center">
+  <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" action="https://formspree.io/f/mgepllab" method="post">
+    <fieldset id="fs-frm-inputs">
+      <label for="full-name">Full Name</label>
+      <input type="text" name="name" id="full-name" placeholder="Your name" required="">
+      <label for="email-address">Email Address</label>
+      <input type="email" name="_replyto" id="email-address" placeholder="email@domain.tld" required="">
+      <label for="message">Message</label>
+      <textarea rows="5" name="message" id="message" placeholder="Hey! Leave your message here and we'll get back to you as soon as possible." required=""></textarea>
+      <input type="hidden" name="_subject" id="email-subject" value="Contact Form Submission">
+    </fieldset>
+    <input type="submit" value="Submit">
+  </form>
+</li>
+</ul>
 
-    <div class="site-footer">
-        <h2>OLIVIA SHERWOOD</h2>
-        <p>Follow me.</p>
-        <ul>
-            <li><a href="https://www.instagram.com/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a></li>
+  <!-- Start of footer with social links -->
 
-            <li><a href="https://www.linkedin.com/in/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-linkedin"></i></a></li>
-        </ul>
+  <div class="site-footer">
+    <div class="footer__link">
+      <ul class="footer__list">
+        <li><a href="#">ABOUT</a></li>
+        <li><a href="shop.html">SHOP</a></li>
+        <li><a href="#">DELIVERY</a></li>
+        <li><a href="#">RETURNS</a></li>
+        <li><a href="contact.html">FAQs</a></li>
+        <li><a href="contact.html">CONTACT US</a></li>
+      </ul>
 
     </div>
-    <script src='script.js'></script>
+    <div class="social-icons">
+      <ul>
+        <li><a href="https://www.instagram.com/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-instagram"></i></a></li>
+
+        <li><a href="https://www.linkedin.com/in/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
+              class="fab fa-linkedin"></i></a></li>
+      </ul>
+    </div>
+    <div id="copyright">
+      <p>© 2020 OLIVIA SHERWOOD</p>
+    </div>
+
+  </div>
+  <script src='script.js'></script>
 </body>
 
 </html>

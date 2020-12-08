@@ -20,20 +20,20 @@
     <link rel="shortcut icon" href="/icons/favicon.ico">
 
 
+
     <!-- Formbutton -->
     <script src="https://formspree.io/js/formbutton-v1.min.js" defer></script>
 
     <script>
         /* paste this in verbatim */
-        window.formbutton = window.formbutton || function () {
-            (formbutton.q = formbutton.q || []).push(arguments);
-        };
+        window.formbutton = window.formbutton || function () { (formbutton.q = formbutton.q || []).push(arguments); };
 
         /* customize formbutton here*/
         formbutton("create", {
             action: "https://formspree.io/f/mgepllab",
             title: "How can we help?",
-            fields: [{
+            fields: [
+                {
                     type: "email",
                     label: "Email:",
                     name: "email",
@@ -46,9 +46,7 @@
                     name: "message",
                     placeholder: "What's on your mind?",
                 },
-                {
-                    type: "submit"
-                }
+                { type: "submit" }
             ],
             styles: {
                 fontFamily: "Montserrat",
@@ -78,7 +76,7 @@
             <ul>
                 <li><a href="index.html">ABOUT</a></li>
                 <li><a href="shop.html">SHOP</a></li>
-                <li><a href="contact.html">CONTACT</a></li>
+               <li><a href="contact.html">CONTACT</a></li>
             </ul>
         </nav>
     </header>
@@ -90,54 +88,72 @@
         </div>
     </div>
 
-
+    
+   
     <div class="os-icon">
-        <img src="icons/os-icon-circle.png">
+        <a href="index.html"><img src="icons/os-icon-circle.png"></a> 
     </div>
 
-
-
-    <!-- Header -->
-    <div class="header">
-        <img class="header-img" src="images/drawings/drawing10.JPG" alt="">
-        <div>
-            <h1>Artwork</h1>
-            <p>Illustrations, prints and cards.</p>
-        </div>
-    </div>
 
 
     <!-- introduction text -->
     <div class="intro-text">
-        <h3>Hand-drawn prints</h3>
-        <p>We make and design handmade and hand-drawn illustration, prints and cards.
+       <h3>Hand-drawn prints</h3>
+        <p>We make and design handmade and hand-drawn illustration, prints and cards. 
         </p>
-        <p>Thank you for taking the time to have a look at our work. If you see something but would like it in a
-            different colour, please get in touch.</p>
+        <p>Thank you for taking the time to have a look at our work. If you see something but would like it in a different colour, please get in touch.</p>
     </div>
 
+
+    <div class="intro-text-shop-items">
+        <h3>Browse all prints:</h3>
+    </div>
 
 
 
     <!-- Drawing showcase -->
     <div class="drawing-showcase">
-        <h2>Popular prints</h2>
         <ul>
             <li class="drawing-border">
-                <a href="#"><img class="drawing-image" src="images/drawings/drawing1.PNG" alt="drawing1" /></a>
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing1.PNG" alt="drawing2" /></a>
                 <p>Azte Pattern</p>
                 <p>Available in: A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
             <li class="drawing-border">
-                <a href="#"><img class="drawing-image" src="images/drawings/drawing7.PNG" alt="drawing2" /></a>
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing21.PNG" alt="drawing2" /></a>
                 <p>Mixed Media</p>
                 <p>Available in: A5, A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
 
             <li class="drawing-border">
-                <a href="#"><img class="drawing-image" src="images/drawings/drawing6.PNG" alt="drawing3" /></a>
+                <a href="#"><img class="drawing-image"src="images/drawings/drawing3.PNG" alt="drawing3" /></a>
+                <p>Triangular</p>
+                <p>Available in: A2, A3</p>
+                <a class="shop-now" href="#">Shop now</a>
+            </li>
+            <li class="drawing-border">
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing4.PNG" alt="drawing4" /></a>
+                <p>Floral</p>
+                <p>Available in: A5, A6</p>
+                <a class="shop-now" href="#">Shop now</a>
+            </li>
+            <li class="drawing-border">
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing5.PNG" alt="drawing1" /></a>
+                <p>Azte Pattern</p>
+                <p>Available in: A6</p>
+                <a class="shop-now" href="#">Shop now</a>
+            </li>
+            <li class="drawing-border">
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing6.PNG" alt="drawing2" /></a>
+                <p>Mixed Media</p>
+                <p>Available in: A5, A6</p>
+                <a class="shop-now" href="#">Shop now</a>
+            </li>
+
+            <li class="drawing-border">
+                <a href="#"><img class="drawing-image"src="images/drawings/drawing7.PNG" alt="drawing3" /></a>
                 <p>Triangular</p>
                 <p>Available in: A2, A3</p>
                 <a class="shop-now" href="#">Shop now</a>
@@ -148,52 +164,56 @@
                 <p>Available in: A5, A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
-        </ul>
-
-    </div>
-
-    <!-- Start of parallax effect 2 -->
-
-    <section class="parallax">
-
-        <div class="frontpage_text">
-        </div>
-
-    </section>
-
-    <div class="drawing-showcase2">
-        <h2>Popular prints</h2>
-        <ul>
+                   
             <li class="drawing-border">
-                <a href="#"><img class="drawing-image" src="images/drawings/drawing2.PNG" alt="drawing5" /></a>
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing13.PNG" alt="drawing1" /></a>
                 <p>Azte Pattern</p>
                 <p>Available in: A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
             <li class="drawing-border">
-                <a href="#"><img class="drawing-image" src="images/drawings/drawing4.PNG" alt="drawing6" /></a>
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing14.PNG" alt="drawing2" /></a>
                 <p>Mixed Media</p>
                 <p>Available in: A5, A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
 
             <li class="drawing-border">
-                <a href="#"><img class="drawing-image" src="images/drawings/drawing5.PNG" alt="drawing7" /></a>
+                <a href="#"><img class="drawing-image"src="images/drawings/drawing15.PNG" alt="drawing3" /></a>
                 <p>Triangular</p>
-                <p>Available in: A5, A6</p>
+                <p>Available in: A2, A3</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
             <li class="drawing-border">
-                <a href="#"><img class="drawing-image" src="images/drawings/drawing9.PNG" alt="drawing8" /></a>
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing16.PNG" alt="drawing4" /></a>
                 <p>Floral</p>
-                <p>Available in: A6</p>
+                <p>Available in: A5, A6</p>
+                <a class="shop-now" href="#">Shop now</a>
+            </li>
+                     <li class="drawing-border">
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing18.PNG" alt="drawing2" /></a>
+                <p>Mixed Media</p>
+                <p>Available in: A5, A6</p>
+                <a class="shop-now" href="#">Shop now</a>
+            </li>
+
+            <li class="drawing-border">
+                <a href="#"><img class="drawing-image"src="images/drawings/drawing19.PNG" alt="drawing3" /></a>
+                <p>Triangular</p>
+                <p>Available in: A2, A3</p>
+                <a class="shop-now" href="#">Shop now</a>
+            </li>
+            <li class="drawing-border">
+                <a href="#"><img class="drawing-image" src="images/drawings/drawing17.PNG" alt="drawing4" /></a>
+                <p>Floral</p>
+                <p>Available in: A5, A6</p>
                 <a class="shop-now" href="#">Shop now</a>
             </li>
         </ul>
 
     </div>
 
-    </section>
+  
 
     <section id="content-2">
         <div class="text-2">
@@ -213,35 +233,36 @@
         </div>
     </section>
 
-
     </main>
-    <!-- Start of footer with social links -->
+    
+    
+      <!-- Start of footer with social links -->
 
-    <div class="site-footer">
-<div class="footer__link"> 
-<ul class="footer__list">
-    <li><a href="#">ABOUT</a></li>
-    <li><a href="shop.html">SHOP</a></li>
-    <li><a href="#">DELIVERY</a></li>
-    <li><a href="#">RETURNS</a></li>
-    <li><a href="contact.html">FAQs</a></li>
-    <li><a href="contact.html">CONTACT US</a></li>
-    </ul>
-
-</div>
-        <div class="social-icons">
-        <ul>
-            <li><a href="https://www.instagram.com/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-instagram"></i></a></li>
-
-            <li><a href="https://www.linkedin.com/in/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
-                        class="fab fa-linkedin"></i></a></li>
-        </ul>
-    </div>
- <div id="copyright"><p>© 2020 OLIVIA SHERWOOD</p></div>
-
-    </div>
-    <script src='script.js'></script>
-</body>
-
-</html>
+      <div class="site-footer">
+        <div class="footer__link"> 
+        <ul class="footer__list">
+            <li><a href="#">ABOUT</a></li>
+            <li><a href="shop.html">SHOP</a></li>
+            <li><a href="#">DELIVERY</a></li>
+            <li><a href="#">RETURNS</a></li>
+            <li><a href="contact.html">FAQs</a></li>
+            <li><a href="contact.html">CONTACT US</a></li>
+            </ul>
+        
+        </div>
+                <div class="social-icons">
+                <ul>
+                    <li><a href="https://www.instagram.com/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-instagram"></i></a></li>
+        
+                    <li><a href="https://www.linkedin.com/in/oliviasherwood/" target="_blank" rel="noopener noreferrer"><i
+                                class="fab fa-linkedin"></i></a></li>
+                </ul>
+            </div>
+         <div id="copyright"><p>© 2020 OLIVIA SHERWOOD</p></div>
+        
+            </div>
+            <script src='script.js'></script>
+        </body>
+        
+        </html>
