@@ -4,7 +4,7 @@
 @import url('header.css');
 @import url('contact.css');
 
-*{
+* {
   box-sizing: border-box;
 }
 
@@ -50,6 +50,7 @@ h2 {
 .intro-text {
   position: relative;
   text-align: center;
+  margin-top: 60px;
   padding: 40px 20px;
   font-size: 1rem;
   color: white;
@@ -59,12 +60,23 @@ h2 {
 
 .intro-text-shop-items {
   position: relative;
+  margin: 20px 0px 20px 0px;
   text-align: center;
   font-size: 1.3333rem;
   color: white;
   background-color: #181818;
 }
 
+@media (min-height: 600px) {
+.intro-text-shop-items {
+  position: relative;
+  margin: 50px 0px 40px 0px;
+  text-align: center;
+  font-size: 1.3333rem;
+  color: white;
+  background-color: #181818;
+}
+}
 .intro-text p {
   margin: 0px 80px 0px 80px;
 }
@@ -92,8 +104,8 @@ h2 {
   padding: 20px;
 }
 
- .drawing-image:hover {
-    max-width: 80%;
+.drawing-image:hover {
+  max-width: 80%;
   transition: transform 1s ease;
 }
 
@@ -222,14 +234,15 @@ h2 {
 
 /* ---------------- parallax ------------------------------- */
 
-.parallax {
+
+.parallax1 {
   position: relative;
   background-image: linear-gradient(to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2),
       rgba(0, 0, 0, 0.2)),
-    url(images/photography/daisy2.jpg);
-  min-height: 100vh;
+    url(images/drawings/My\ Post.png);
+  min-height: 50vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -241,13 +254,14 @@ h2 {
 }
 
 .frontpage_text {
-  padding-top: 250px;
+  padding-top: 300px;
   top: 50%;
 }
 
 .frontpage_text h1 {
   background-color: black;
-  width: 500px;
+  font-size: 5rem;
+  width: 400px;
   margin: 0 auto;
   font-size: 1.3rem;
 }
