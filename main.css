@@ -313,7 +313,7 @@ h2 {
       rgba(0, 0, 0, 0.2)
     ),
     url(images/drawings/drawing11.JPG);
-  min-height: 100vh;
+  min-height: 90vh;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
