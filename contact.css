@@ -6,6 +6,7 @@
     width: 100%;
     /* The width is the width of the web page */
     margin-bottom: 4rem;
+    margin-bottom: 2rem;
   }
   
   
@@ -40,11 +41,32 @@
 }
 
 
+
 .contact-us-get-touch h3 {
     font-size: 1.3333rem;
+    margin-top: 2rem;
 }
 
 .contact-us-get-touch p {
+    margin-bottom: 3rem;
+
+}
+
+
+.questions {
+    margin-top: 100px;
+    text-align: center;
+    padding: 0px 20px;
+    font-size: 1rem;
+    color: white;
+    background-color: #181818;
+}
+
+.questions h3 {
+    font-size: 1.3333rem;
+    }
+
+.questions p {
     margin-bottom: 3rem;
 
 }
@@ -68,7 +90,7 @@ ul.form-layout {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        border: solid #7d9eb2 14px;
+        border: solid #7d9eb2 9px;
         padding: 0px;
         margin: 50px 200px 100px 200px;
     }
@@ -85,7 +107,7 @@ ul.form-layout {
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        border: solid #7d9eb2 34px;
+        border: solid #7d9eb2 10px;
         padding: 0px;
         margin: 0px 340px 100px 340px;
     }
