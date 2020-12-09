@@ -1,8 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Chivo:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Roboto+Slab&display=swap");
-@import url('menu.css');
-@import url('footer.css');
-@import url('header.css');
-@import url('contact.css');
+@import url("menu.css");
+@import url("footer.css");
+@import url("header.css");
+@import url("contact.css");
 
 * {
   box-sizing: border-box;
@@ -38,8 +38,6 @@ h2 {
   }
 }
 
-
-
 /* ------------------ introduction homepage ------------- */
 
 .os-icon-circle {
@@ -57,10 +55,9 @@ h2 {
   background-color: #181818;
 }
 
-
 .intro-text-shop-items {
   position: relative;
-  margin: 20px 0px 20px 0px;
+  margin: 120px 0px 20px 0px;
   text-align: center;
   font-size: 1.3333rem;
   color: white;
@@ -68,14 +65,14 @@ h2 {
 }
 
 @media (min-height: 600px) {
-.intro-text-shop-items {
-  position: relative;
-  margin: 50px 0px 40px 0px;
-  text-align: center;
-  font-size: 1.3333rem;
-  color: white;
-  background-color: #181818;
-}
+  .intro-text-shop-items {
+    position: relative;
+    margin: 120px 0px 40px 0px;
+    text-align: center;
+    font-size: 1.3333rem;
+    color: white;
+    background-color: #181818;
+  }
 }
 .intro-text p {
   margin: 0px 80px 0px 80px;
@@ -236,10 +233,12 @@ h2 {
 
 .parallax1 {
   position: relative;
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)),
+      rgba(0, 0, 0, 0.2)
+    ),
     url(images/drawings/collage2.png);
   min-height: 42vh;
   background-attachment: fixed;
@@ -250,15 +249,17 @@ h2 {
   letter-spacing: 0.3em;
   font-size: 1.5em;
   text-align: center;
+  margin-top: 200px;
 }
-
 
 .parallax2 {
   position: relative;
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)),
+      rgba(0, 0, 0, 0.2)
+    ),
     url(images/drawings/collage2.png);
   min-height: 45vh;
   background-attachment: fixed;
@@ -269,7 +270,7 @@ h2 {
   letter-spacing: 0.3em;
   font-size: 1.5em;
   text-align: center;
-  margin-top: 30px;
+  margin-top: 200px;
 }
 
 .frontpage_text {
@@ -304,12 +305,13 @@ h2 {
   align-items: center;
 }
 
-
 .parallax {
-  background-image: linear-gradient(to bottom,
+  background-image: linear-gradient(
+      to bottom,
       rgba(0, 0, 0, 0) 0%,
       rgba(0, 0, 0, 0.2),
-      rgba(0, 0, 0, 0.2)),
+      rgba(0, 0, 0, 0.2)
+    ),
     url(images/drawings/drawing11.JPG);
   min-height: 100vh;
   background-attachment: fixed;
@@ -346,7 +348,6 @@ h2 {
 #customize-get-in-touch:hover {
   color: black;
 }
-
 
 .customize {
   display: flex;
@@ -393,7 +394,7 @@ h2 {
 
   .intro-text h3 {
     font-size: 1.3rem;
-    padding-top: 10vh;
+    padding-top: 20vh;
     margin: 0;
     padding-bottom: 1.3rem;
   }
@@ -401,18 +402,14 @@ h2 {
   .intro-text-shop-items h3 {
     font-size: 1.3rem;
     padding-top: 2vh;
-    margin: 0;
-
+    margin-top: 100px;
   }
 }
-
-
-
 
 @media (min-width: 1000px) {
   .intro-text h3 {
     font-size: 2rem;
-    padding-top: 10vh;
+    padding-top: 20vh;
   }
 
   .intro-text p {
