@@ -25,3 +25,22 @@ function toggleNav(event) {
 	const siteNav = document.querySelector('.user-nav-open')
 	siteNav.classList.toggle('is-active');
 }
+
+
+
+
+// Initialize and add the map
+function initMap() {
+  // The location of Uluru
+  const borehamwood = { lat:  51.647750, lng: -0.261360 };
+  // The map, centered at Uluru
+  const map = new google.maps.Map(document.getElementById("map"), {
+    zoom: 50,
+    center: borehamwood,
+  });
+  // The marker, positioned at Uluru
+  const marker = new google.maps.Marker({
+    position: borehamwood,
+    map: map,
+  });
+}

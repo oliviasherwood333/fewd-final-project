@@ -1,4 +1,15 @@
-.contact-us-intro-text {
+
+/* Set the size of the div element that contains the map */
+#map {
+    height: 400px;
+    /* The height is 400 pixels */
+    width: 100%;
+    /* The width is the width of the web page */
+  }
+  
+  
+  
+  .contact-us-intro-text {
     margin-top: 80px;
     text-align: center;
     padding: 40px 20px;
@@ -68,7 +79,6 @@ ul.form-layout {
 }
 
 
-#fs-frm input,
 #fs-frm select,
 #fs-frm textarea,
 #fs-frm fieldset,
@@ -78,7 +88,7 @@ ul.form-layout {
 
     font-family: inherit;
     font-size: 100%;
-    color: black !important;
+    color: white !important;
     border: none;
     border-radius: 0;
     display: block;
@@ -86,6 +96,21 @@ ul.form-layout {
     padding: 0;
     margin: 0;
     -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+#fs-frm-inputs {
+    font-family: inherit;
+    font-weight: 300;
+    font-size: 100%;
+    color: black;
+    border: none;
+    border-radius: 30px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+       -webkit-appearance: none;
     -moz-appearance: none;
 }
 
