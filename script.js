@@ -31,7 +31,7 @@ function toggleNav(event) {
 
 // Initialize and add the map
 function initMap() {
-  // The location of Uluru
+  // The location of borehamwood
   const borehamwood = { lat:  51.647750, lng: -0.261360 };
   // The map, centered at borehamwood
   const map = new google.maps.Map(document.getElementById("map"), {
