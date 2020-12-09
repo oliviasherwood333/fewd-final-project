@@ -102,7 +102,7 @@ h2 {
 }
 
 .drawing-image:hover {
-  max-width: 80%;
+  max-width: 95%;
   transition: transform 1s ease;
 }
 
@@ -249,7 +249,7 @@ h2 {
   letter-spacing: 0.3em;
   font-size: 1.5em;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 15vh;
 }
 
 .parallax2 {
@@ -270,7 +270,7 @@ h2 {
   letter-spacing: 0.3em;
   font-size: 1.5em;
   text-align: center;
-  margin-top: 200px;
+  margin-top: 15vh;
 }
 
 .frontpage_text {
