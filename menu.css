@@ -67,7 +67,7 @@
     align-items: center;
     width: 100%;
     background-color: rgb(170, 170, 170);
-    padding: 10px 50px 10px 50px;
+    padding: 4px 50px 4px 50px;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -109,7 +109,6 @@
   .user-nav-open a:hover,
   .site-nav a:hover {
     color: white;
-    font-weight: bold;
     transition: color 0.4s ease;
     transform: translateY(-3px);
   }

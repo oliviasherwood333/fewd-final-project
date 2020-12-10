@@ -26,21 +26,3 @@ function toggleNav(event) {
 	siteNav.classList.toggle('is-active');
 }
 
-
-
-
-// Initialize and add the map
-function initMap() {
-  // The location of borehamwood
-  const borehamwood = { lat:  51.647750, lng: -0.261360 };
-  // The map, centered at borehamwood
-  const map = new google.maps.Map(document.getElementById("map"), {
-    zoom: 10,
-    center: borehamwood,
-  });
-  // The marker, positioned at borehamwood
-  const marker = new google.maps.Marker({
-    position: borehamwood,
-    map: map,
-  });
-}
