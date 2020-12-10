@@ -1,15 +1,46 @@
 
-/* Set the size of the div element that contains the map */
-#map {
+.google-map iframe {
+    margin: auto 0;
     height: 400px;
-    /* The height is 400 pixels */
     width: 100%;
-    /* The width is the width of the web page */
-    margin-bottom: 4rem;
-    margin-bottom: 2rem;
-  }
-  
-  
+   }
+   
+
+.contact-flex {
+    padding: 2rem 2rem 1rem;
+   display: flex;
+   max-width: 100%;
+   flex-direction: column;
+   background-color: #181818;
+} 
+
+
+
+@media (min-width: 1100px) {
+.contact-flex {
+   padding: 2rem 2rem 1rem;
+   display: flex;
+   max-width: 100%;
+   justify-content: center;
+   flex-direction: row;
+   background-color: #181818;
+}
+.google-map iframe {
+    margin: auto 0;
+    height: 600px;
+    width: 600px;
+   }
+} 
+
+
+.google-map iframe {
+    margin: auto 0;
+    height: 300px;
+    width: 300px;
+
+}
+
+
 
   .icons-contact i {
     font-size: 1.333rem;
@@ -17,10 +48,8 @@
 
 
 
-  
   .contact-us-intro-text {
-    margin-top: 80px;
-    text-align: center;
+     text-align: center;
     padding: 40px 20px;
     font-size: 1rem;
     color: white;
@@ -28,48 +57,37 @@
 }
 
 .contact-us-intro-text h3 {
-    font-size: 3rem;
-}
-
-.contact-us-get-touch {
-    margin-top: 20px;
-    text-align: center;
-    padding: 0px 20px;
-    font-size: 1rem;
-    color: white;
-    background-color: #181818;
-}
-
-
-
-.contact-us-get-touch h3 {
-    font-size: 1.3333rem;
-    margin-top: 2rem;
-}
-
-.contact-us-get-touch p {
-    margin-bottom: 3rem;
-
+    font-size: 1.333rem;
 }
 
 
 .questions {
-    margin-top: 100px;
-    text-align: center;
+    margin-top: 50px;
+   text-align: center;
     padding: 0px 20px;
     font-size: 1rem;
     color: white;
     background-color: #181818;
 }
 
-.questions h3 {
-    font-size: 1.3333rem;
-    }
-
-.questions p {
-    margin-bottom: 6rem;
+@media (min-width:1100px) {
+    
+.questions {
+    margin-top: 70px;
+   text-align: center;
+   
+margin-left: 100px;
+    font-size: 1.333rem;
 
 }
+
+
+}
+
+
+
+
+
 ul.form-layout {
     padding: 0px;
 }
@@ -90,23 +108,11 @@ ul.form-layout {
         flex-direction: column;
         align-items: center;
         padding: 0px;
-        margin: 50px 200px 100px 200px;
     }
 
     .contact-us-get-touch p {
              margin: 10px 200px 80px 200px;
     
-    }
-}
-
-@media (min-width: 1200px) {
-    .form-layout li {
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        align-items: center;
-    padding: 0px;
-        margin: 0px 340px 100px 340px;
     }
 }
 
@@ -124,8 +130,9 @@ ul.form-layout {
     border: none;
     border-radius: 0;
     display: block;
-    width: 100%;
-    padding: 0;
+    width: 300px;
+
+    padding: 5px;
     margin: 0;
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -151,7 +158,7 @@ ul.form-layout {
 #fs-frm ::placeholder {
     font-size: .825rem;
     margin-bottom: .5rem;
-    padding-top: 2rem;
+    padding-top: 1rem;
     display: flex;
     align-items: baseline;
     color: black;
